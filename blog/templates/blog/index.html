@@ -1,4 +1,13 @@
-{% extends 'blog/base.html' %}
 {% block content %}
-<h2>Main page</h2>
+<h2>Latest articles</h2>
+
+<ul>
+    {% for article in article_list %}
+    <li><a href="">{{ article.title }} ({{article.publication_date}})</a></li>
+    {% empty %}
+    <li>There is no articles</li>
+    {% endfor %}
+</ul>
+
+
 {% endblock %}
