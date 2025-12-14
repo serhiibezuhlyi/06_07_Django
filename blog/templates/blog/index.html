@@ -1,13 +1,12 @@
+{% extends 'base.html' %}
+
 {% block content %}
 <h2>Latest articles</h2>
 
-<ul>
-    {% for article in article_list %}
-    <li><a href="">{{ article.title }} ({{article.publication_date}})</a></li>
-    {% empty %}
-    <li>There is no articles</li>
-    {% endfor %}
-</ul>
+{% include "blog/article_list.html" %}
 
+{% if article_list %}
+    <h3><a href="{% url 'all_articles' %}">for more click here</a></h3>
+{% endif %}
 
 {% endblock %}

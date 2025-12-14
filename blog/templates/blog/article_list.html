@@ -1,0 +1,8 @@
+
+<ul>
+    {% for article in article_list %}
+    <li><a href="">{{ article.title }} ({{article.publication_date}})</a></li>
+    {% empty %}
+    <li>There is no articles</li>
+    {% endfor %}
+</ul>

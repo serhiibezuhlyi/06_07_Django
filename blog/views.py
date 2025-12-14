@@ -14,3 +14,7 @@ class Index(ListView):
 
     def get_queryset(self):
         return Article.objects.order_by("-publication_date")[:3]
+
+class AllArticles(ListView):
+    model = Article
+    template_name = "blog/all_articles.html"
