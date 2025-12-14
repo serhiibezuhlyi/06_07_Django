@@ -14,10 +14,10 @@
             <ul>
                 {% for category in article.category.all %}
                     <li>
-                        <div>
+                        <a href="{% url 'categories' %}">
                             {{category.name}}
                             <i class="{{category.icon}}"></i>
-                        </div>
+                        </a>
                     </li>
                 {% endfor %}
             </ul>
@@ -37,10 +37,10 @@
         <div>
             <h3>Comments</h3>
             {% for comment in article.comments.all %}
-            <div>
-                {{comment.author}}<br>
+            <div class="comment">
+                <span class="comment_author">{{comment.author}}</span><br>
                 {{comment.text}}<br>
-                {{comment.publication_date}}<br>
+                <span class="date">{{comment.publication_date}}</span><br>
                 <p></p>
             </div>
             {% endfor %}

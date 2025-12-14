@@ -1,0 +1,13 @@
+
+.comment {
+    padding: 4px;
+    gap: 4px;
+}
+
+.comment_author {
+    font-weight: bold;
+}
+
+.date {
+    font-style: italic;
+}

@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 
-from blog.models import Article
+from blog.models import Article, Category
 
 
 # def index(request):
@@ -21,3 +21,7 @@ class AllArticles(ListView):
 
 class ArticleDetail(DetailView):
     model = Article
+
+class CategoryList(ListView):
+    model = Category
+    template_name = "blog/categories.html"

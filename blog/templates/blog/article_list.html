@@ -1,7 +1,10 @@
 
 <ul>
     {% for article in article_list %}
-    <li><a href="{% url 'article_detail' article.id %}">{{ article.title }} ({{article.publication_date}})</a></li>
+    <li>
+        <a href="{% url 'article_detail' article.id %}">{{ article.title }} ({{article.publication_date}})
+        </a>
+    </li>
     {% empty %}
     <li>There is no articles</li>
     {% endfor %}

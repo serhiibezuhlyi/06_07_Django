@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://kit.fontawesome.com/dc5bced0a2.js" crossorigin="anonymous"></script>
+    {% load static %}
     <title>
         {% block title %}
             my blog
         {% endblock %}
     </title>
+    <script src="https://kit.fontawesome.com/dc5bced0a2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
 </head>
 <body>
     <main>{% block content %}{% endblock %}</main>
