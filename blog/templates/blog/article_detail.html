@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{article.title}}
+{% endblock %}
+
+{% block content %}
+
+    <div>
+        <div>
+            <h1>{{article.title}}</h1>
+            <h2>Author: {{article.author}}</h2>
+            <h3>Categories</h3>
+            <ul>
+                {% for category in article.category.all %}
+                    <li>
+                        <div>
+                            {{category.name}}
+                            <i class="{{category.icon}}"></i>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+            {% if article.image %}
+                <img src="{{article.image}}" alt="none" width="300" height="300">
+            {% endif %}
+            <p>{{article.text}}</p>
+            <p>{{article.publication_date}}</p>
+            <p>
+                Tags:
+                {% for tag in article.tags.all %}
+                    {{ tag.title }}{% if not forloop.last %}, {% endif %}
+                {% endfor %}
+            </p>
+        </div>
+
+        <div>
+            <h3>Comments</h3>
+            {% for comment in article.comments.all %}
+            <div>
+                {{comment.author}}<br>
+                {{comment.text}}<br>
+                {{comment.publication_date}}<br>
+                <p></p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

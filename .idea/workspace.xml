@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f515a769-1bc7-44d9-b5a2-8cb610f64504" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/article_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/article_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
     </list>
@@ -63,6 +63,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\WebTraining\06_07_Django" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebTraining\06_07_Django\blog\templates" />
     </key>
   </component>
   <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
@@ -125,7 +128,7 @@
       <workItem from="1764594791002" duration="1848000" />
       <workItem from="1764800758215" duration="39000" />
       <workItem from="1765640321619" duration="7195000" />
-      <workItem from="1765706063886" duration="1625000" />
+      <workItem from="1765706063886" duration="3743000" />
     </task>
     <servers />
   </component>

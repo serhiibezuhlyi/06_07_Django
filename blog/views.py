@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 
 from blog.models import Article
 
@@ -18,3 +18,6 @@ class Index(ListView):
 class AllArticles(ListView):
     model = Article
     template_name = "blog/all_articles.html"
+
+class ArticleDetail(DetailView):
+    model = Article
